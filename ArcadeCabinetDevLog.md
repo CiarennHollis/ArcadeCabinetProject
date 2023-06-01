@@ -1,6 +1,23 @@
 # Arcade Cabinet Input Software Devlog
 #### Ciarenn Hollis  
   
+## 1 June 2023 | 14:46
+### Update
+ * I wasn't able to fix the issue with the controller reading "extra" inputs. I tried using if statements and else if statements but it didn't exactly work. I did notice that the longer the button is held for dictates how much "extra" inputs get read in. A light tap won't have as many keystrokes as a harder press.
+ * Uploaded it to github to have sharing and version control.
+
+### Next Steps
+ * Find a solution for the "extra" input that the controller reads in.
+  
+   
+ ## 1 June 2023 | 12:21
+ ### Update
+ * I've accomplished the goals set in the previous entry.
+ * There is an issue with the arduino reading several inputs for a single button press (or really what it is is that the loop checking for the voltage on the buttons checks several times before the voltage can revert back to normal). I need to have some logic to prevent that from causing there to be "extra" inputs read
+ ### Next Steps
+  * Fix "multiple" input issue
+  
+  
 ## 1 June 2023 | 9:30
 ### Check In
 This project is programming the software that would allow the arcade cabinet to read input from the it's gamepads (which each have one joy stick and an A and B btn). This project is going to be written in C++ for an Arduino Leonardo. Currently, there is one gamepad set up with the arduino for testing, the second will be added later on. I've found some examples of people creating their own custom game controllers using the arduino where the input the arduino reads from the controller is translated into a keyboard input for the computer it's hooked up to to use. I want to do something similar with this, this would make it easier for students to program their own games for it.
@@ -42,9 +59,3 @@ This project is programming the software that would allow the arcade cabinet to 
  * N - 78
  * M - 77
  
- ## 1 June 2023 | 12:21
- ### Update
- * I've accomplished the goals set in the previous entry.
- * There is an issue with the arduino reading several inputs for a single button press (or really what it is is that the loop checking for the voltage on the buttons checks several times before the voltage can revert back to normal). I need to have some logic to prevent that from causing there to be "extra" inputs read
- ### Next Steps
-  * Fix "multiple" input issue
