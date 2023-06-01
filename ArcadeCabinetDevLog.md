@@ -36,6 +36,7 @@ This project is programming the software that would allow the arcade cabinet to 
  * 5 = PL2 Up
    
 #### Digital Pins
+ * 
 
 #### Serial functions
   * begin() - sets the data rate in bits per second (baud) for serial data transmission. Do these gamepads have a specific baud rate they need? Have to ask Will. Answer: the gamepad doesn't operate on serial but the arduino does, I just might have to try different rates. There is one used in an example I found that I will start with.
