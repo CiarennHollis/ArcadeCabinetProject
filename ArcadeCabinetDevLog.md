@@ -1,6 +1,14 @@
 # Arcade Cabinet Input Software Devlog
 #### Ciarenn Hollis  
   
+## 6 June 2023 | 14:50
+### Update
+ * I was lookind around at things that could be used to fix the problem with the "extra" input keystrokes.  I found a video Paul McWhorter where he was setting up a push button and referenced the code he used for the delay on his button. 
+ * Using that delay code fixed the "issue". With one button press on the game controller, there is only one key stroke. More keystrokes are still made if the button is held though, which is what we wanted.
+ * Will had a question about whether we can get the buttons of the controller to not be read continuously but be read more similarly to how a keyboard's keypresses are read. I wonder if messing around with the delay would do that or if I would have to implement a system for detecting if the key was released. We might have to implement state for that. Will wants to test how the cpu reads keystrokes from the keyboard vs strokes from the controller.
+### Next Steps
+ * Mess around with the controller and see how close we can get it to mirroring keyboard inputs.
+
 ## 1 June 2023 | 14:46
 ### Update
  * I wasn't able to fix the issue with the controller reading "extra" inputs. I tried using if statements and else if statements but it didn't exactly work. I did notice that the longer the button is held for dictates how much "extra" inputs get read in. A light tap won't have as many keystrokes as a harder press.

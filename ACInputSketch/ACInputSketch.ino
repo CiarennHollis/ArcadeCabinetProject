@@ -1,4 +1,5 @@
 # include <Keyboard.h> 
+int delayTime = 120;
 void setup() {
   // put your setup code here, to run once:
 
@@ -24,31 +25,37 @@ void loop() {
   {
     //Send an ASCII 'V'
       Keyboard.write(86);
+      delay(delayTime);
   }
   if (digitalRead(1) == LOW)
   {
     //Send an ASCII 'C'
     Keyboard.write(67);
+    delay(delayTime);
   }
   if (digitalRead(2) == LOW)
   {
   //Send an ASCII 'A'
     Keyboard.write(65);
+    delay(delayTime);
   }
   if (digitalRead(3) == LOW)
   {
     //Send an ASCII 'S'
     Keyboard.write(83);
+    delay(delayTime);
   }
   if (digitalRead(4) == LOW)
   {
     //Send an ASCII 'D'
     Keyboard.write(68);
+    delay(delayTime);
   }
   if (digitalRead(5) == LOW)
   {
     //Send an ASCII 'W'
     Keyboard.write(87);
+    delay(delayTime);
   }
   else 
   {
