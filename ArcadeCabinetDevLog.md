@@ -1,6 +1,28 @@
 # Arcade Cabinet Input Software Devlog
 #### Ciarenn Hollis  
   
+## 8 June 2023 | 
+### Notes
+#### Updated Pin 'map'
+  
+* 0 = PL2 A        [v]
+ * 1 = PL2 B       [c]
+ * 4 = PL2 Left    [a]
+ * 3 = PL2 Down  [s]
+ * 2 = PL2 Right  [d]
+ * 5 = PL2 Up     [w]
+  
+ * 6 = PL1 A        [n]
+ * 7 = PL1 B        [m]
+ * 8 = PL1 Left     [KEY_LEFT_ARROW]
+ * 9 = PL1 Down  [KEY_DOWN_ARROW]
+ * 10 = PL1 Right [KEY_RIGHT_ARROW]
+ * 11 = PL1 Up     [KEY_UP_ARROW]
+ 
+### Update
+ * The second controller is programmed and hooked up. The controller works.
+ * The main bits of the arcade cabinet are done.
+  
 ## 8 June 2023 | 11:44
 ### Update 
  * I found a tutorial on setting up an arcade controller by the youtube channel BrainyBits. From there I found the companion artical the creator made which showcased his code for that controller. 
