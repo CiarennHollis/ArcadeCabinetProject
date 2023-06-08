@@ -1,6 +1,18 @@
 # Arcade Cabinet Input Software Devlog
 #### Ciarenn Hollis  
   
+## 8 June 2023 | 10:57
+### Update 
+ * So, after removing the delay (setting it to zero), both games could read input from the controller. However, this input is a kin to making a keystroke several times per second rather than a keystroke being held so the in-game player avatar wasn't performing the way it normally would when reacting to regular keyboard input. 
+ * I am going to have to have a system that reads and checks input off the controller in a similar way that the input off a keyboard is read and checked. 
+### Next steps
+ * Research how a cpu reads input off the of a keyboard.
+ * Figure out how to implement a similar system for the game controller.
+  
+## 8 June 2023 | 10:43
+### Update
+ * So, the controller can "type" it's ascii input equivalents into a text editor. But I wanted to see how it performs with an actual game. One of the developers from FlatRedBall the David A. knows gave me some games to try out. 
+ * I tried out one of the games that that developer gave me (KosmoSquad) but the controller didn't seem to work with it. So instead I tried it out with the game Hyperlight Drifter to see if it might have just been that game or if it was the controller. In Hyperlight Drifter, the controller still didn't work but the game was reading input from it. The player avater did move and react slightly to it. I'm thinking maybe the delay on the controller may be too high for playing an actuall game with it so I'm going try a lower delay time to see if it changes anything.
 ## 6 June 2023 | 14:50
 ### Update
  * I was lookind around at things that could be used to fix the problem with the "extra" input keystrokes.  I found a video Paul McWhorter where he was setting up a push button and referenced the code he used for the delay on his button. 
