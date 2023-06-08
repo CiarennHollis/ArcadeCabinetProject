@@ -1,6 +1,14 @@
 # Arcade Cabinet Input Software Devlog
 #### Ciarenn Hollis  
   
+## 8 June 2023 | 11:44
+### Update 
+ * I found a tutorial on setting up an arcade controller by the youtube channel BrainyBits. From there I found the companion artical the creator made which showcased his code for that controller. 
+ * In the SetUp() function, I have the line of code: "Keyboard.begin();" I had learned previously from other articles that this command starts the simulation of a keyboard. In looking at BrainyBits's code, I saw that he was using the function Keyboard.press('') rather than Keyboard.write like I was. Keyboard.write() simulates a keyboard press and subsequent release while release only simulates a keyboard press ands to have Keyboard.release() called at somepoint after it for that key to be released. 
+ * So, I implemented the usage of Keyboard.press() and Keyboard.release(), replace the Keyboard.write commands with them. This achieved the behavior we were looking for. To further test, I tried this out with the KosmoSquad game. The controller worked well enough with the game; the controller moved the player avavtar around as we intended it to.
+### Next Steps
+ * Writing code for the second controller to be functional. I was waiting on do the second controller until I got this first controller working since the code for the second controller will essentially be a duplicate of the first controller's but just tailored for the different pins and keystrokes.
+  
 ## 8 June 2023 | 10:57
 ### Update 
  * So, after removing the delay (setting it to zero), both games could read input from the controller. However, this input is a kin to making a keystroke several times per second rather than a keystroke being held so the in-game player avatar wasn't performing the way it normally would when reacting to regular keyboard input. 
