@@ -1,6 +1,20 @@
 # Arcade Cabinet Input Software Devlog
 #### Ciarenn Hollis  
   
+## 13 June 2023 | 14:57
+### Update
+ * Will and I tested playing the game KosmoSquad on the arcade cabinet machine itself with both controllers hooked up. It played relatively fine but playing a game in the landscape orientation with the controllers being in a different vertical orientation made play difficult.
+ * There are two buttons on one of the controllers that didn't yet have a purpose. So, I decided to make these buttons be switches for changing the orientation of the controllers. If someone makes a game to fit a vertical orientation, the controllers can be flipped to match that; if someone wants to make a game to fit a vertical orientation, the controllers can be flipped to match that.
+ * I basically just used arrays to store the keys and had the keystrokes that get returned be stored in variables rather than being hard coded like before. I separated out the code for switching the controls into it's own methods that shouldn't interfere with the original control logic written. 
+ * This isn't the cleanest way to go about this, I don't think, but it was relatively the easiest that made the most sense to me without having to make it too complicated.
+### Next Steps
+ * Upload this version of the script to the arduino and test to see if it works. (The arduino isn't currently hooked up to this cpu I'm working on and is instead still in the cabinet.)
+  
+## 13 June 2023 | 9:30
+### Note About Last Two Buttons
+ * There are two buttons left on one of the controllers. We haven't decided how were are going to use them yet or what keyboard keys they are going to be mapped to.
+ * Even if their purpose hasn't been decided yet, I can note down what pins they are going to be plugged into
+
 ## 8 June 2023 | 
 ### Notes
 #### Updated Pin 'map'
