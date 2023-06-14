@@ -1,22 +1,22 @@
 # include <Keyboard.h> 
 
-key PL2Keys[6] = {'v', 'c', 'a', 's', 'd', 'w'}; 
-key PL1Keys[6] = {'n', 'm', KEY_LEFT_ARROW, 
+char PL2Keys[6] = {'v', 'c', 'a', 's', 'd', 'w'}; 
+char PL1Keys[6] = {'n', 'm', KEY_LEFT_ARROW, 
   KEY_DOWN_ARROW, KEY_RIGHT_ARROW, KEY_UP_ARROW};
 
-key PL2A;
-key PL2B;
-key PL2Left;
-key PL2Down;
-key PL2Right;
-key PL2UP;
+char PL2A;
+char PL2B;
+char PL2Left;
+char PL2Down;
+char PL2Right;
+char PL2Up;
 
-key PL1A;
-key PL1B;
-key PL1Left;
-key PL1Down;
-key PL1Right;
-key PL1UP;
+char PL1A;
+char PL1B;
+char PL1Left;
+char PL1Down;
+char PL1Right;
+char PL1Up;
 
 void setup() {
   // put your setup code here, to run once:
@@ -63,13 +63,13 @@ void SetupKeys(){
   PL1A = PL1Keys[0];
   PL1B = PL1Keys[1];
 
-  SetVertical();
+  SetPortrait();
 }
 
 void SetPortrait() {
-  PL2Left = PL2Keys[2];
+  PL2Left = PL2Keys[4];
   PL2Down = PL2Keys[3];
-  PL2Right = PL2Keys[4];
+  PL2Right = PL2Keys[2];
   PL2Up = PL2Keys[5];
 
   PL1Left = PL1Keys[2];
@@ -78,15 +78,15 @@ void SetPortrait() {
   PL1Up = PL1Keys[5];
 }
 void SetLandscape(){
-  PL2Left = PL2Keys[5];
+  PL2Left = PL2Keys[3];
   PL2Down = PL2Keys[2];
-  PL2Right = PL2Keys[3];
+  PL2Right = PL2Keys[5];
   PL2Up = PL2Keys[4];
 
-  PL1Left = PL1Keys[5];
-  PL1Down = PL1Keys[2];
-  PL1Right = PL1Keys[3];
-  PL1Up = PL1Keys[4];
+  PL1Left = PL1Keys[3];
+  PL1Down = PL1Keys[4];
+  PL1Right = PL1Keys[5];
+  PL1Up = PL1Keys[2];
 }
 
 void ListenForButtonOrientationChange()
@@ -115,7 +115,7 @@ void ListenForPL2()
       Keyboard.press(PL2A);
   }
   else {
-    Keyboard.release(PL2A]);
+    Keyboard.release(PL2A);
   }
   
   if (digitalRead(1) == LOW){
@@ -128,7 +128,7 @@ void ListenForPL2()
   
   if (digitalRead(4) == LOW){
   //Send an ASCII 'A'
-    Keyboard.press(PL2Left]);
+    Keyboard.press(PL2Left);
   }
   else{
     Keyboard.release(PL2Left);
@@ -154,10 +154,10 @@ void ListenForPL2()
   if (digitalRead(5) == LOW)
   {
     //Send an ASCII 'W'
-    Keyboard.press(PL2UP);
+    Keyboard.press(PL2Up);
   }
   else{
-    Keyboard.release(PL2UP);
+    Keyboard.release(PL2Up);
   }
 }
 

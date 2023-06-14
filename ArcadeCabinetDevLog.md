@@ -1,6 +1,11 @@
 # Arcade Cabinet Input Software Devlog
 #### Ciarenn Hollis  
   
+## 14 June 2023 | 11:24
+### Update
+ * The new version of the script was tested on the machine.
+ * Errors in the orientation were fixed. So now the machine's controls can be successfully oriented to either play with a portrait screen or a landscade screen.
+ * Currently, from a functionality standpoint, this arcade machine is at minimum viable product status.
 ## 13 June 2023 | 14:57
 ### Update
  * Will and I tested playing the game KosmoSquad on the arcade cabinet machine itself with both controllers hooked up. It played relatively fine but playing a game in the landscape orientation with the controllers being in a different vertical orientation made play difficult.
